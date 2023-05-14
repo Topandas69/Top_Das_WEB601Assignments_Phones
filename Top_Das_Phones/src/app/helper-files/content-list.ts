@@ -20,6 +20,14 @@ export class ContentList {
     }
 
     getContent(index: number){
+        if(index >= this.contents.length){
+            return`
+                <div>
+                    <h1>Error finding content with this index</h1>
+                </div>
+            `;
+        }
+        
         let content = this.contents[index];
         return `
         <div class=''>
