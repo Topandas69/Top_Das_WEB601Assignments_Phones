@@ -2,3 +2,6 @@
 img{
     max-width: 100%;
 }
+.card:first-child .card{
+    border-width: 2px;
+}
