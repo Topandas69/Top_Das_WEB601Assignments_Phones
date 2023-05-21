@@ -1,0 +1,19 @@
+
+
+.card{
+    padding: 15px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    img{
+        max-width: 100%;
+        cursor: pointer;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    p{
+        margin: 10px 0px;
+        text-align: justify;
+    }
+}
