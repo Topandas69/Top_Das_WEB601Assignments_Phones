@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -11,10 +12,11 @@ import { ContentTypePipe } from './content-type.pipe';
     AppComponent,
     ContentCardComponent,
     ContentListComponent,
-    ContentTypePipe
+    ContentTypePipe,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

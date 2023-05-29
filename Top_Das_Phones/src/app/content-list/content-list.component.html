@@ -1,3 +1,19 @@
+<section class="searchForTitle">
+    <div>
+        <input type="text" [(ngModel)]="searchTitle">
+        <button (click)="searchByTitle()">Search</button>
+    </div>
+
+    <div *ngIf="titleFound !== null">
+        <p [style.color]="titleFound ? 'green' : 'red'">
+            {{titleFound ? 'Title Found' : 'Title not found'}}
+        </p>
+    </div>
+</section>
+
+
+
+
 <h1>No Type</h1>
 <div *ngFor="let content of contentList | contentType" class="card no-type">
     <app-content-card [content]="content"></app-content-card>
