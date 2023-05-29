@@ -1,3 +1,17 @@
-<div *ngFor="let content of contentList | slice: 0:5" class="card">
+<h1>No Type</h1>
+<div *ngFor="let content of contentList | contentType" class="card no-type">
+    <app-content-card [content]="content"></app-content-card>
+</div>
+
+
+<h1>I-OS</h1>
+<div *ngFor="let content of contentList | contentType:'I-OS'" class="card i-os">
+    <app-content-card [content]="content"></app-content-card>
+</div>
+
+
+
+<h1>Android</h1>
+<div *ngFor="let content of contentList | contentType:'Android'" class="card android">
     <app-content-card [content]="content"></app-content-card>
 </div>
