@@ -54,12 +54,19 @@ export class ContentListComponent {
       },
       {
         id: 6,
+        title: "Nokia Asha 305",
+        description: "The Nokia Asha 305 was announced at Bangkok by Nokia, and the announcement offered global availability from 3Q of 2012. The phone's suggested price was €63 subject to taxes and subsidies.",
+        creator: "Nokia",
+        imgURL: "https://cdn.dotpe.in/longtail/store-items/7994766/9kXeLNro.png",
+      }, 
+      {
+        id: 7,
         title: "I Phone SE",
         description: "The iPhone SE (2022) is the smallest and cheapest brand new iPhone you can buy. Despite its low price and cutely anachronistic size, the SE has the same processor inside as the much more expensive iPhone 13 and iPhone 13 Pro, making it a temptation for anyone wanting to save money but not compromise on performance.",
         creator: "Apple",
         imgURL: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-finish-select-202207-midnight?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1655316263296",
         type: "I-OS"
-      }
+      }, 
       
     ];
   }
