@@ -49,7 +49,8 @@ export class ContentListComponent {
         description: "the Galaxy S23+ use faster UFS 4.0 storage, which enables faster file transfer speeds. With one caveat: UFS 4.0 is not supported by the base 128GB Galaxy S23 variant.",
         creator: "Samsung",
         imgURL: "https://images.samsung.com/ca/smartphones/galaxy-s23/buy/product_color_phantom_black_plus.png?imwidth=480",
-        type: "Android"
+        type: "Android",
+        tags: ['samsung', 'phone', 'S series']
       },
       {
         id: 5,
@@ -64,6 +65,7 @@ export class ContentListComponent {
         description: "The Nokia Asha 305 was announced at Bangkok by Nokia, and the announcement offered global availability from 3Q of 2012. The phone's suggested price was €63 subject to taxes and subsidies.",
         creator: "Nokia",
         imgURL: "https://cdn.dotpe.in/longtail/store-items/7994766/9kXeLNro.png",
+        tags: ['Nokia', 'Old Phone', 'Java jar']
       }, 
       {
         id: 7,
