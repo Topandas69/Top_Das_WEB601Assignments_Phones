@@ -8,6 +8,7 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentCardComponent {
   @Input() content: any;
+  defaultPhoneImage: string = '/assets/img/mobile-phone.png';
 
   handleClick(content: Content){
     console.log(`ID: ${content.id}, Title: ${content.title}`);
