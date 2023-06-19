@@ -10,10 +10,26 @@ export class ContentListComponent {
   public contentList:Content[];
   searchTitle: string = "";
   titleFound: boolean | null = null;
+  errTxt: boolean = false;
 
 
   searchByTitle(){
     this.titleFound = this.contentList.some(content => content.title === this.searchTitle);
+  }
+  addContent(newContent: Content){
+    const AddPromise = new Promise((resolve, reject) => {
+      this.contentList.push(newContent);
+      this.contentList = [...this.contentList];
+      resolve(newContent.title);
+    });
+
+    AddPromise.then(data => {
+      console.log(`Content Added successfully with title: ${data}`);
+      this.errTxt = false;
+    }).catch(err => {
+      this.errTxt = true;
+    });
+    
   }
 
   constructor(){
