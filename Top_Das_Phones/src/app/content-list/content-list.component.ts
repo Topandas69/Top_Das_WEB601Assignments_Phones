@@ -22,4 +22,10 @@ export class ContentListComponent {
     this.PhonesService.getContent().subscribe(contentList => this.contentList = contentList);
   }
 
+  addContent(newAnime: Content){
+    this.PhonesService.addAnime(newAnime).subscribe(newPhoneBack => {
+      this.contentList.push(newPhoneBack);
+      this.contentList = [...this.contentList];
+    });
+  }
 }
