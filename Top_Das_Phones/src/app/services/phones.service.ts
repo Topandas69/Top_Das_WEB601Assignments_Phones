@@ -27,7 +27,7 @@ export class PhonesService {
     return of(content);
   }
 
-  addAnime(newPhone: Content){
+  addPhone(newPhone: Content){
     this.messageService.addMessage(`New Phone Content added`);
     return this.http.post<Content>("/api/phones", newPhone, this.httpOptions);
   }

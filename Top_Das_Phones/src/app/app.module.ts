@@ -13,7 +13,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { ModifyContentComponent } from './modify-content/modify-content.component';
-// import { ModifyContentComponent } from './modify-content/modify-content.component';
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +32,19 @@ import { ModifyContentComponent } from './modify-content/modify-content.componen
     HoverAffectDirective,
     MessagesComponent,
     ModifyContentComponent,
+    AddContentDialogComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    MatButtonModule,
+    MatInputModule,
+    MatDividerModule,
+    MatDialogModule,
+    MatIconModule,
+    MatCardModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
       delay: 1000
